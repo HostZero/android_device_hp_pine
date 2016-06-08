@@ -1,10 +1,5 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
-
-$(call inherit-product-if-exists, vendor/hp/pine/pine-vendor.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/hp/pine/overlay
 
 LOCAL_PATH := device/hp/pine
